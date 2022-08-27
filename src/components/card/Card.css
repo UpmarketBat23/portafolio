@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container .contt .imagen {
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: transparent;
+    transition: .5s;
+}
+
+.container .contt .imagen:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
