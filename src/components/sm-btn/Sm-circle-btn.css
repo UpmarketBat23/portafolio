@@ -1,0 +1,148 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.dist {
+    margin-left: 7px;
+}
+
+.button-big {
+    font-size: 2em;
+    width: 50px;
+    text-align: center;
+    padding: 0.2em 0em 0.2em 0em;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* Facebook class and animation */
+
+.facebook {
+    color: #3B5998;
+    border: 1px solid #3B5998;
+}
+
+.facebook:hover {
+    animation: facebookAnim 0.4s normal forwards linear;
+    -webkit-animation: facebookAnim 0.4s normal forwards linear;
+}
+
+@keyframes facebookAnim {
+    50% {
+        background-color: #3B5998;
+    }
+
+    100% {
+        background-color: #3B5998;
+        border: 1px solid #3B5998;
+        color: #fff;
+    }
+}
+
+@-webkit-keyframes facebookAnim {
+    50% {
+        background-color: #3B5998;
+    }
+
+    100% {
+        background-color: #3B5998;
+        border: 1px solid #3B5998;
+        color: #fff;
+    }
+}
+
+/* YouTube class and animation */
+
+.youtube {
+    color: #bb0000;
+    border: 1px solid #bb0000;
+}
+
+.youtube:hover {
+    animation: ytAnim 0.4s normal forwards linear;
+    -webkit-animation: ytAnim 0.4s normal forwards linear;
+}
+
+@keyframes ytAnim {
+    50% {
+        background-color: #bb0000;
+    }
+
+    100% {
+        background-color: #bb0000;
+        border: 1px solid #bb0000;
+        color: #fff;
+    }
+}
+
+@-webkit-keyframes ytAnim {
+    50% {
+        background-color: #bb0000;
+    }
+
+    100% {
+        background-color: #bb0000;
+        border: 1px solid #bb0000;
+        color: #fff;
+    }
+}
+
+/* Instagram class and animation */
+
+.instagram {
+    color: #125688;
+    border: 1px solid #125688;
+}
+
+.instagram:hover {
+    animation: instaAnim 0.4s normal forwards linear;
+    -webkit-animation: instaAnim 0.4s normal forwards linear;
+}
+
+@-webkit-keyframes instaAnim {
+    50% {
+        background-color: #125688;
+    }
+
+    100% {
+        background-color: #125688;
+        border: 1px solid #125688;
+        color: #fff;
+    }
+}
+
+@keyframes instaAnim {
+    50% {
+        background-color: #125688;
+    }
+
+    100% {
+        background-color: #125688;
+        border: 1px solid #125688;
+        color: #fff;
+    }
+}
+
+/* link styles */
+
+.facebook a {
+    color: #3B5998;
+}
+
+.youtube a {
+    color: #bb0000;
+}
+
+.instagram a {
+    color: #125688;
+}
+
+.facebook a:hover {
+    color: #fff;
+}
+
+.youtube a:hover {
+    color: #fff;
+}
+
+.instagram a:hover {
+    color: #fff;
+}

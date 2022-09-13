@@ -1,20 +1,19 @@
 import "./App.css";
 import React from "react";
 import BannerNav from "./components/nav/Nav";
-import FotoPrueba from "./components/assets/photo.svg";
-import juanjuan from "./components/assets/IMG_1860_pp.jpg";
-import opapo from "./components/assets/istockphoto-1248542684-612x612.jpg";
 import HtmlLogo from "./components/assets/html5logo.svg";
 import Css3Logo from "./components/assets/css3-svgrepo-com.svg";
 import BootstrapLogo from "./components/assets/bootstrap-4-logo-svgrepo-com.svg";
 import JSLogo from "./components/assets/jslogo.svg";
-import ReactLogo from "./components/assets/react-svgrepo-com.svg";
+import ReactLogo from "./components/assets/React-icon.svg";
+import NPMLogo from "./components/assets/Npm-logo.svg";
+import GitHubLogo from "./components/assets/GitHubLogo.svg";
 import SkillsBox from "./components/card/Card";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
 import RippleButton from "./components/pruebas/Pruebas";
-import Button from "react-bootstrap/Button";
-import IsoCard from "./components/isocard/IsoCard";
+import Typewriter from "./components/typewriter/Typewriter";
+import CircleBtn from "./components/sm-btn/Sm-circle-btn";
 
 function App() {
   return (
@@ -24,14 +23,13 @@ function App() {
       </div>
       <div className='acomodar'>
         <div>
-          <div className='titulo'>
-            <span className='container'>Juan Pablo Monteros Lazcano</span>
-            <br />
-            <span className='yo'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
-              non, doloribus qui officiis aperiam soluta, distinctio culpa, aut
-              ad dicta necessitatibus possimus iste nemo.
+          <div className='titulo-banner'>
+            <span className='texto'>
+              Juan Pablo Monteros Lazcano FrontEnd Developer
             </span>
+            <br />
+            <Typewriter className='hhh' />
+            <span className='yo'>Hi! I'm Juan here is my resume </span>
           </div>
           <br />
           <div className='bttn'>
@@ -45,23 +43,40 @@ function App() {
           <span className='couleurtxte'>Skills</span>
         </div>
         <div className='container'>
-          <SkillsBox foto={HtmlLogo} nombre='HTML5' />
-          <SkillsBox foto={Css3Logo} nombre='CSS3' />
-          <SkillsBox foto={JSLogo} nombre='JavaScript' />
-          <SkillsBox foto={ReactLogo} nombre='React' />
-          <SkillsBox foto={BootstrapLogo} nombre='Bootstrap' />
+          <SkillsBox pic={HtmlLogo} name='HTML5' />
+          <SkillsBox pic={Css3Logo} name='CSS3' />
+          <SkillsBox pic={JSLogo} name='JavaScript' />
+          <SkillsBox pic={ReactLogo} name='React' />
+          <SkillsBox pic={BootstrapLogo} name='Bootstrap' />
+          <SkillsBox pic={NPMLogo} name='NPM' />
+          <SkillsBox pic={GitHubLogo} name='GitHub' />
         </div>
       </div>
-      <div className='titulo '>
+      <div className='titulo'>
         <div>
-          <span className='jualdo'>About Me</span>
+          <span>About Me</span>
         </div>
         <div>
-          <About></About>
+          <About
+            Name='Juan Pablo Monteros Lazcano'
+            Age='18 Years Old'
+            DOF='14/06/2004'
+            Gender='Male'
+            Status='single'
+            Nationality='Argentinian'
+            Languages='Spanish (Native), English (Shitty) '
+            Location='something'
+            Phone='something'
+            Email='something'
+            Linkedin='something'
+          ></About>
         </div>
       </div>
       <div>
-        <Footer />
+        <footer className='footer'>
+          <CircleBtn />
+          <Footer />
+        </footer>
       </div>
     </div>
   );

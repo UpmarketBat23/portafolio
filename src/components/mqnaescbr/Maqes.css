@@ -1,0 +1,32 @@
+.css-typing {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes type {
+    to {
+        width: 10em;
+    }
+}
+
+@-webkit-keyframes type {
+    to {
+        width: 10em;
+    }
+}
+
+p {
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+p:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+p:nth-child(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}

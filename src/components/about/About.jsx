@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import FotoPrueba from "../assets/photo.svg";
 import juanjuan from "../assets/IMG_1860_pp.jpg";
 
 function About(props) {
@@ -22,14 +21,19 @@ function About(props) {
       <div className='imagen'>
         <img className='foto' src={juanjuan} alt='foto' />
       </div>
-      <div className='container'>
-        <div className='texto'>
-          <span>
-            Name: {Name} Age: {Age} Date of Birth: {DOF} <br />
-            Gender: {Gender} Status: {Status} Nationality: {Nationality} <br />
-            Languages: {Languages} Location: {Location} Phone: {Phone} <br />
-            Email: {Email} Linkedin: {Linkedin}
-          </span>
+      <div className='datos'>
+        <div className='text'>
+          <span>Name: {Name}</span>
+          <span>Age: {Age}</span>
+          <span>Date of Birth: {DOF}</span>
+          <span>Gender: {Gender}</span>
+          <span>Status: {Status}</span>
+          <span>Nationality: {Nationality}</span>
+          <span>Languages: {Languages}</span>
+          <span>Location: {Location} </span>
+          <span>Phone: {Phone}</span>
+          <span>Email: {Email}</span>
+          <span>Linkedin: {Linkedin}</span>
         </div>
       </div>
     </div>
