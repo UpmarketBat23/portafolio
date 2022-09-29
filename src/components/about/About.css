@@ -1,7 +1,5 @@
 .foto {
     background-color: #ffffff;
-    /* border-radius: 10px; */
-    /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); */
     position: relative;
     overflow: hidden;
     object-fit: contain;
@@ -16,30 +14,26 @@
 }
 
 .text {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    /* position: relative; */
     font-weight: bold;
-    margin-top: 0% !important;
-    display: flex;
-    justify-content: center;
-    color: #186e88;
+    text-align: start;
+    color: #ffffff;
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin: 2em 0 2em 5em;
+
 }
 
 .datos {
     display: grid;
-    justify-content: center;
-    /* border: 2px solid black; */
-    font-size: medium;
-
+    margin: 0 1em 0 2em;
+    border: 0 solid #000;
+    border-radius: 3px;
+    background: #0d0c36;
 }
 
 .pppp {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 1px 0 1px transparent, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    background-color: #060517;
 }

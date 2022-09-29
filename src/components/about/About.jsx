@@ -18,6 +18,9 @@ function About(props) {
   } = props;
   return (
     <div className='pppp'>
+      <div>
+        <span className='about-title'>About Me</span>
+      </div>
       <div className='imagen'>
         <img className='foto' src={juanjuan} alt='foto' />
       </div>

@@ -1,9 +1,18 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2em 0 1em 0;
+}
+
 form {
     /* Centrar el formulario en la página */
-    margin: 0 0 0 auto;
-    width: 400px;
+    margin: 0 auto;
+    width: 442px;
     /* Esquema del formulario */
-    padding: 1em;
+    padding-bottom: 1em;
+    color: #fff;
 }
 
 ul {
@@ -29,21 +38,21 @@ textarea {
     font: 1em sans-serif;
 
     /* Tamaño uniforme del campo de texto */
-    width: 300px;
+    width: 400px;
     box-sizing: border-box;
 
     /* Hacer coincidir los bordes del campo del formulario */
     border: 1px solid #999;
 
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #e81c41;
     background-color: transparent;
 }
 
 input:focus,
 textarea:focus {
     /* Destacado adicional para elementos que tienen el cursor */
-    border-color: #000;
+    border-color: #c4072a;
     outline: none;
 }
 
@@ -63,13 +72,16 @@ textarea {
 }
 
 .button-form {
-    /* Alinear los botones con los campos de texto */
-    padding-left: 90px;
-    /* mismo tamaño que los elementos de la etiqueta */
-}
-
-.button-form {
     /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
        entre las etiquetas y sus campos de texto */
-    margin-left: .5em;
+    /* margin-left: .5em; */
+    /* Alinear el boton con los campos de texto */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-right: 3em;
 }

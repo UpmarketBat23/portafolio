@@ -1,12 +1,16 @@
 import React from "react";
-import "./Typewriter.css";
+import Typewriter from "typewriter-effect";
 
-function Typewriter() {
+function TypewriterBanner() {
   return (
-    <div className='typewriter'>
-      <span>Hi! I'm Juan, here is my resume</span>
+    <div style={{ color: "#186e88", fontWeight: "lighter", fontSize: "2rem" }}>
+      <Typewriter
+        onInit={(typewriter) => {
+          typewriter.typeString("Hi! I'm Juan here is my resume").start();
+        }}
+      />
     </div>
   );
 }
 
-export default Typewriter;
+export default TypewriterBanner;

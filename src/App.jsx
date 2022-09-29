@@ -12,12 +12,12 @@ import SkillsBox from "./components/card/Card";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
 import RippleButton from "./components/pruebas/Pruebas";
-import Typewriter from "./components/typewriter/Typewriter";
 import CircleBtn from "./components/sm-btn/Sm-circle-btn";
+import TypewriterBanner from "./components/typewriter/Typewriter";
 
 function App() {
   return (
-    <div>
+    <div className='bg-couleur'>
       <div className='navnavnav'>
         <BannerNav />
       </div>
@@ -28,19 +28,22 @@ function App() {
               Juan Pablo Monteros Lazcano FrontEnd Developer
             </span>
             <br />
-            <Typewriter className='hhh' />
-            <span className='yo'>Hi! I'm Juan here is my resume </span>
+            <TypewriterBanner />
           </div>
           <br />
           <div className='bttn'>
-            <RippleButton>Download Resume</RippleButton>
+            <a href='./components/assets/CV.pdf' target='blank' download>
+              <RippleButton>Download Resume</RippleButton>
+            </a>
           </div>
-          <div></div>
+          <div>
+            <CircleBtn />
+          </div>
         </div>
       </div>
       <div className='bg-couleur'>
         <div className='container titulo'>
-          <span className='couleurtxte'>Skills</span>
+          <span style={{ color: "white", fontSize: "3rem" }}>Skills</span>
         </div>
         <div className='container'>
           <SkillsBox pic={HtmlLogo} name='HTML5' />
@@ -54,27 +57,24 @@ function App() {
       </div>
       <div className='titulo'>
         <div>
-          <span>About Me</span>
-        </div>
-        <div>
           <About
+            style={{ color: "red" }}
             Name='Juan Pablo Monteros Lazcano'
             Age='18 Years Old'
             DOF='14/06/2004'
             Gender='Male'
-            Status='single'
+            Status='Single'
             Nationality='Argentinian'
             Languages='Spanish (Native), English (Shitty) '
-            Location='something'
-            Phone='something'
-            Email='something'
-            Linkedin='something'
+            Location='San Miguel de Tucumán, Argentina'
+            Phone='+54 9 381 505 2310'
+            Email='xxxnaujxxx@gmail.com'
+            Linkedin='ypyppyp'
           ></About>
         </div>
       </div>
       <div>
         <footer className='footer'>
-          <CircleBtn />
           <Footer />
         </footer>
       </div>

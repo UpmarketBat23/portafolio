@@ -15,7 +15,7 @@
 .titulo-banner {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #234c58;
+  color: #0d0c36;
   text-align: center;
   margin-top: 2rem;
 }
@@ -24,20 +24,27 @@
   display: flex;
   justify-content: center;
   margin-top: 12rem;
-  color: #186e88;
+  color: #0d0c36;
 }
 
 .titulo {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #234c58;
+  color: #fff;
   text-align: center;
+  margin-bottom: 3em;
+}
+
+.about-title {
+  color: #fff;
+  font-size: 2em;
 }
 
 .acomodar {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to right top, #b9e9ff, #78b8cc);
+  /* background-image: linear-gradient(to right top, #b9e9ff, #78b8cc); */
+  background-color: #060517;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,16 +69,11 @@
 }
 
 .bg-couleur {
-  background: linear-gradient(to right, #01627f, #6fb4d4);
-}
-
-.couleurtxte {
-  color: #ffffff;
-  margin: 1rem 1rem 1rem 0rem;
+  background: #0d0c36;
 }
 
 .navnavnav {
-  background: linear-gradient(to right, #01627f, #6fb4d4);
+  background: #0d0c36;
   position: fixed;
   top: 0;
   right: 0;
@@ -94,6 +96,6 @@
 }
 
 .footer {
-  background: linear-gradient(to right, #01627f, #6fb4d4);
+  background: #0d0c36;
   color: #ffffff;
 }
