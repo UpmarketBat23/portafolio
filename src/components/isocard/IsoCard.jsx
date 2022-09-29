@@ -4,8 +4,8 @@ import "./IsoCard.css";
 
 function IsoCard() {
   return (
-    <div class='isometric-card'>
-      <img className='logo' src={HtmlLogo} alt='foto' />
+    <div class="isometric-card">
+      <img className="logo" src={HtmlLogo} alt="foto" width="5px" />
     </div>
   );
 }

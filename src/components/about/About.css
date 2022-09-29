@@ -1,39 +1,39 @@
 .foto {
-    background-color: #ffffff;
-    position: relative;
-    overflow: hidden;
-    object-fit: contain;
-    max-width: 41%;
-    max-height: 41%;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  max-width: 41%;
+  max-height: 41%;
 }
 
 .foto {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .text {
-    font-weight: bold;
-    text-align: start;
-    color: #ffffff;
-    margin-left: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    align-items: center;
-    margin: 2em 0 2em 5em;
-
+  font-weight: bold;
+  text-align: start;
+  color: #ffffff;
+  margin-left: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin: 2em 0 2em 5em;
 }
 
 .datos {
-    display: grid;
-    margin: 0 1em 0 2em;
-    border: 0 solid #000;
-    border-radius: 3px;
-    background: #0d0c36;
+  display: grid;
+  margin: 0 1em 0 2em;
+  border: 0 solid #000;
+  border-radius: 3px;
+  background: #0d0c36;
 }
 
 .pppp {
-    background-color: #060517;
+  background-color: #060517;
+  padding-bottom: 20px;
 }
