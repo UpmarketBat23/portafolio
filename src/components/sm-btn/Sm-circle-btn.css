@@ -10,12 +10,15 @@
     /* padding: 0.2em 0em; */
     display: inline-block;
     border-radius: 50%;
-    background-color: #78b8cc;
+    background-color: transparent;
+    /* este es el color de fondo del principio */
 }
 
 .sm-btn {
-    color: #125688;
-    border: 1px solid #125688;
+    color: #fff;
+    /* el color del icono */
+    border: 2px solid #e81c41;
+    /* este es el borde del principio */
     /* animation: instaAnim 0.4 normal forwards linear;
     -webkit-animation: instaAnim 0.4s normal forwards linear; */
     transition: 0.4s ease-in-out transform, 0.3s ease-in-out
@@ -28,36 +31,27 @@
 
 @-webkit-keyframes instaAnim {
     50% {
-        background-color: #125688;
+        background-color: rgba(232, 28, 65, 20%);
     }
 
     100% {
-        background-color: #125688;
-        border: 1px solid #125688;
+        background-color: #fff;
+        border: 2px solid #fff;
         color: #fff;
     }
 }
 
 @keyframes instaAnim {
     50% {
-        background-color: #125688;
+        /* background-color: rgb(232, 28, 65); */
+        background-color: rgba(232, 28, 65, 20%);
     }
 
     100% {
-        background-color: #125688;
-        border: 1px solid #125688;
+        background-color: #e81c41;
+        border: 2px solid #e81c41;
         color: #fff;
     }
-}
-
-/* link styles */
-
-.sm-btn a {
-    color: #125688;
-}
-
-.sm-btn a:hover {
-    color: #fff;
 }
 
 .circlebtn {

@@ -1,9 +1,9 @@
-.contact {
+.contact-title {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 2em 0 1em 0;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
 }
 
 form {
@@ -11,14 +11,21 @@ form {
     margin: 0 auto;
     width: 442px;
     /* Esquema del formulario */
-    padding-bottom: 1em;
     color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    form {
+        width: 90%;
+    }
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    color: #fff;
 }
 
 form li+li {
@@ -36,6 +43,7 @@ textarea {
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
     font: 1em sans-serif;
+    color: #fff;
 
     /* Tamaño uniforme del campo de texto */
     width: 400px;
@@ -49,10 +57,18 @@ textarea {
     background-color: transparent;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
 input:focus,
 textarea:focus {
     /* Destacado adicional para elementos que tienen el cursor */
-    border-color: #c4072a;
+    border-color: #e81c41;
     outline: none;
 }
 
@@ -71,6 +87,7 @@ textarea {
     resize: none;
 }
 
+
 .button-form {
     /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
        entre las etiquetas y sus campos de texto */
@@ -80,8 +97,15 @@ textarea {
     justify-content: flex-end;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .button-form {
+        display: grid;
+        grid-column: 1fr;
+        justify-content: flex-end;
+    }
+}
+
 .social-media {
     display: flex;
     justify-content: center;
-    margin-right: 3em;
 }

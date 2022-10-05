@@ -11,6 +11,13 @@
     cursor: pointer;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .ripple-button {
+        margin: 0;
+
+    }
+}
+
 .ripple-button>.ripple {
     width: 20px;
     height: 20px;

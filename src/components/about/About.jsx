@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import juanjuan from "../assets/IMG_1860_pp.jpg";
+import juanjuan from "../assets/4 x 4.jpg";
 
 function About(props) {
   const {
@@ -17,7 +17,7 @@ function About(props) {
     Linkedin,
   } = props;
   return (
-    <div className='pppp'>
+    <div className='about about-container'>
       <div>
         <span className='about-title'>About Me</span>
       </div>
@@ -26,17 +26,39 @@ function About(props) {
       </div>
       <div className='datos'>
         <div className='text'>
-          <span>Name: {Name}</span>
-          <span>Age: {Age}</span>
-          <span>Date of Birth: {DOF}</span>
-          <span>Gender: {Gender}</span>
-          <span>Status: {Status}</span>
-          <span>Nationality: {Nationality}</span>
-          <span>Languages: {Languages}</span>
-          <span>Location: {Location} </span>
-          <span>Phone: {Phone}</span>
-          <span>Email: {Email}</span>
-          <span>Linkedin: {Linkedin}</span>
+          <span>
+            <strong>Name:</strong> {Name}
+          </span>
+          <span>
+            <strong>Age:</strong> {Age}
+          </span>
+          <span>
+            <strong>Date of Birth:</strong> {DOF}
+          </span>
+          <span>
+            <strong>Gender:</strong> {Gender}
+          </span>
+          <span>
+            <strong>Status:</strong> {Status}
+          </span>
+          <span>
+            <strong>Nationality:</strong> {Nationality}
+          </span>
+          <span>
+            <strong>Languages:</strong> {Languages}
+          </span>
+          <span>
+            <strong>Location:</strong> {Location}
+          </span>
+          <span>
+            <strong>Phone:</strong> {Phone}
+          </span>
+          <span>
+            <strong>Email:</strong> {Email}
+          </span>
+          <span>
+            <strong>Linkedin:</strong> {Linkedin}
+          </span>
         </div>
       </div>
     </div>

@@ -1,39 +1,66 @@
-.foto {
-  background-color: #ffffff;
-  position: relative;
-  overflow: hidden;
-  object-fit: contain;
-  max-width: 41%;
-  max-height: 41%;
-}
+ .foto {
+     background-color: #ffffff;
+     position: relative;
+     overflow: hidden;
+     object-fit: contain;
+     max-width: 23%;
+     max-height: 41%;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     border-radius: 50px;
+     margin: 1rem 0 2rem 0;
+     box-shadow: 0px 0px 23px -9px rgba(255, 255, 255, 0.56);
+     -webkit-box-shadow: 0px 0px 23px -9px rgba(255, 255, 255, 0.56);
+     -moz-box-shadow: 0px 0px 23px -9px rgba(255, 255, 255, 0.56);
+ }
 
-.foto {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+ @media (min-width: 320px) and (max-width: 480px) {
+     .foto {
+         max-width: 56%;
+         max-height: 41%;
+     }
+ }
 
-.text {
-  font-weight: bold;
-  text-align: start;
-  color: #ffffff;
-  margin-left: 2em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-items: center;
-  margin: 2em 0 2em 5em;
-}
+ .text {
+     font-weight: lighter;
+     text-align: start;
+     color: #ffffff;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     align-items: center;
+     margin: 2em 0 2em 5em;
+ }
 
-.datos {
-  display: grid;
-  margin: 0 1em 0 2em;
-  border: 0 solid #000;
-  border-radius: 3px;
-  background: #0d0c36;
-}
+ @media (min-width: 320px) and (max-width: 480px) {
+     .text {
+         grid-template-columns: repeat(1, 1fr);
+         margin: 1rem 0 1rem 1rem;
+         flex-direction: column;
+         width: 100px;
+         height: auto;
+         word-wrap: break-word;
+         font-size: 16px;
 
-.pppp {
-  background-color: #060517;
-  padding-bottom: 20px;
-}
+     }
+ }
+
+ .datos {
+     display: grid;
+     margin: 0 1em 0 1em;
+     border: 0 solid #000;
+     border-radius: 34px;
+     background: #0d0c36;
+ }
+
+
+
+ .about-container {
+     background-color: #060517;
+     padding-bottom: 20px;
+ }
+
+ strong {
+     color: #e81c41;
+ }
